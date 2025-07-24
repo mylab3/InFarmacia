@@ -83,8 +83,8 @@ document.addEventListener('DOMContentLoaded', () => {
         users.forEach(user => {
             const userDiv = document.createElement('div');
             userDiv.className = 'user-card';
-            //userDiv.innerHTML = `<p>${user.nome} ${user.cognome} - ${user.codiceFiscale}</p><button class="btn-red" onclick="deleteUser(${user.id})">Elimina</button>`;
-            userDiv.innerHTML = `<p>${user.nome} ${user.cognome} - ${user.codiceFiscale}</p><div><button class="btn-red" onclick="deleteUser(${user.id})">Elimina</button></div>
+            userDiv.innerHTML = `<p>${user.nome} ${user.cognome} - ${user.codiceFiscale}</p><button class="btn-red" onclick="deleteUser(${user.id})">Elimina</button>`;
+            //userDiv.innerHTML = `<p>${user.nome} ${user.cognome} - ${user.codiceFiscale}</p><div><button class="btn-red" onclick="deleteUser(${user.id})">Elimina</button></div>
 `;
             userList.appendChild(userDiv);
         });
